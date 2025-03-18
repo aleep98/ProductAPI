@@ -1,12 +1,10 @@
-import express from 'express'
-import productRoutes from './routes/productRoutes';
+import { App } from "./app";
 
-const app = express();
+const PORT = process.env.PORT || 5001;
 
-app.use(express.json())
+// Create http instance
+const appInstance = new App();
 
-app.use('/produtos', productRoutes);
-
-app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+appInstance.server?.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
