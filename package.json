@@ -1,0 +1,25 @@
+{
+  "name": "ProductAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r tsconfig-paths/register dist/index.js",
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.10",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.9",
+    "sucrase": "^3.35.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "ignore": ["node_modules"],
+  "watch": ["src/**/*.ts"],
+  "ext": "ts",  
+  "exec": "nodemon --exec ts-node -r dotenv/config"
+  
+}
